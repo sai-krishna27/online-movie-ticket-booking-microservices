@@ -1,0 +1,47 @@
+Table: admin
+Columns:
+admin_email  varchar(255)  PK 
+admin_name  varchar(255) 
+admin_password  varchar(255)
+-----------------------------------------------------------------------------------
+Table: bookings
+Columns:
+id int AI PK 
+email varchar(255) 
+movie varchar(255) 
+movie_date varchar(255) 
+movie_time varchar(255) 
+price float 
+quantity int 
+transaction_id bigint
+-----------------------------------------------------------------------------------
+Table: cart
+Columns:
+id int AI PK 
+email varchar(255) 
+movie varchar(255) 
+price float 
+quantity int
+-----------------------------------------------------------------------------------
+Table: movie
+Columns:
+m_id int AI PK 
+m_description varchar(255) 
+m_duration varchar(255) 
+m_gerne varchar(255) 
+m_image varchar(255) 
+language varchar(255) 
+m_name varchar(255) 
+m_price float 
+m_rating float 
+m_status varchar(255)
+-----------------------------------------------------------------------------------
+Table: user
+Columns:
+u_id int AI PK 
+u_address varchar(255) 
+u_email varchar(255) 
+u_name varchar(255) 
+u_pass varchar(255) 
+u_phno varchar(255)
+-----------------------------------------------------------------------------------
